@@ -8,14 +8,14 @@ body{
   font-family: 'Montserrat';
 }
 
-.debug{
-  border: 1px solid black;
-  background-color: rgba(255, 0, 0, .2);
-}
-
 img{
   width: 100%;
   height: 100%;
+}
+
+.debug{
+  border: 1px solid black;
+  background-color: rgba(255, 0, 0, .2);
 }
 
 .d-flex{
@@ -32,6 +32,22 @@ img{
 
 .justify-center{
   justify-content: center;
+}
+
+.justify-end{
+  justify-content: flex-end;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.btn{
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 15px 40px;
+  color: white;
+  background-color: #0b0e16;
 }
 
 
@@ -65,9 +81,13 @@ img{
 
 .content .right-side .top-bar{
   position: fixed;
-  width: 100%;
+  width: calc(100vw - 230px);
   height: 90px;
   background-color: #0b0e16;
+}
+
+.content .right-side .top-bar .btn{
+  margin-left: 100px;
 }
 
 .content .right-side .menu ul{
