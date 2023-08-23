@@ -64,7 +64,13 @@ img{
 
 .content .left-side .top-bar{
   width: 100%;
-  height: calc(100% - 90px);
+  height: 90px;
+  padding: 20px;
+}
+
+.content .left-side .middle-bar{
+  width: 100%;
+  height: calc(100vh - 270px);
 }
 
 .content .left-side .bottom-bar{
