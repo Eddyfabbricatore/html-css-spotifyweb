@@ -36,6 +36,10 @@ body{
   background-color: rgba(0, 255, 0, 0.2);
 }
 
+.w-25{
+  width: 25%;
+}
+
 .w-50{
   width: 50%;
 }
@@ -56,8 +60,20 @@ body{
   margin-right: 10px;
 }
 
+.ml-10{
+  margin-left: 10px;
+}
+
 .mb-15{
   margin-bottom: 15px;
+}
+
+.br-50{
+  border-radius: 50%;
+}
+
+.p-10{
+  padding: 0 10px;
 }
 
 .p-20{
@@ -68,16 +84,16 @@ body{
   padding-left: 10px;
 }
 
-.pl-20{
-  padding-left: 20px;
-}
-
 .pl-50{
   padding-left: 50px;
 }
 
 .d-flex{
   display: flex;
+}
+
+.f-wrap{
+  flex-wrap: wrap;
 }
 
 .column-direction{
@@ -134,25 +150,25 @@ main aside .top .logo-mobile{
   display: none;
 }
 
-main aside .top nav ul li{
+main aside nav ul li{
   margin-bottom: 15px;
-  padding-left: 20px;
+  padding: 0 20px;
 }
 
-main aside .top nav ul li.active{
+main aside nav ul li.active{
   border-left: 3px solid var(--active);
 }
 
-main aside .top nav ul li a{
+main aside nav ul li a{
   text-decoration: none;
   color: var(--light-grey);
 }
 
-main aside .top nav ul li.active a{
+main aside nav ul li.active a{
   color: white;
 }
 
-main aside .top nav ul li a:hover{
+main aside nav ul li a:hover{
   color: white;
 }
 
@@ -182,7 +198,7 @@ main aside .top .playlist .playlist-new i{
 }
 
 main aside .top .playlist .playlist-list{
-  height: calc(100% - 101px);
+  height: calc(100% - 86px);
   overflow: auto;
 }
 
@@ -279,12 +295,12 @@ main .content h3{
 
 main .content .row .col{
   width: calc(100% / 6);
-  margin-top: 30px;
+  margin-bottom: 30px;
   padding: 0 10px;
 }
 
 main .content .row .col .card .card-top{
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 main .content .row .col .card .card-top img{
@@ -316,6 +332,10 @@ footer{
   background-color: #282828;
 }
 
+footer .player .player-song{
+  min-width: 246px;
+}
+
 footer .player .player-song img{
   width: 50px;
 }
@@ -331,17 +351,36 @@ footer .player .player-song .player-song-info h3{
 }
 
 footer .player i{
+  cursor: pointer;
   color: var(--light-grey);
 }
 
-footer .player .player-song .player-song-icon i:hover{
+footer .player i:hover{
   color: white;
 }
 /* /footer */
 
 
 /* media */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px){
+  main .content .menu nav ul li{
+    margin: 0 10px 10px 0;
+  }
+
+  main .content .row .col{
+    width: calc(100% / 4);
+  }
+
+  main .content .row .col .card .card-bottom h2{
+    font-size: .7rem;
+  }
+
+  main .content .row .col .card .card-bottom h3{
+    font-size: .5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
   main aside{
     width: 50px;
   }
